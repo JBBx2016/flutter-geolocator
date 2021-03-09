@@ -35,7 +35,7 @@
     locationManager.desiredAccuracy = desiredAccuracy;
     locationManager.distanceFilter = distanceFilter == 0 ? kCLDistanceFilterNone : distanceFilter;
     if (@available(iOS 9.0, *)) {
-        locationManager.allowsBackgroundLocationUpdates = [GeolocationHandler shouldEnableBackgroundLocationUpdates];
+        locationManager.allowsBackgroundLocationUpdates = NO;
     }
     
     [locationManager startUpdatingLocation];
